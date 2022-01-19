@@ -1,4 +1,6 @@
 import express from "express";
+
+//import file
 import initWebRoute from './route/web'
 import configViewEngine from "./config/Viewengine";
 
@@ -8,7 +10,7 @@ const port = process.env.PORT || 8000;
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
-//setup view engine
+//setting route and viewEngine
 configViewEngine(app);
 initWebRoute(app);
 
