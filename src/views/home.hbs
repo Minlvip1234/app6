@@ -1,7 +1,24 @@
 <!DOCTYPE html>
+
 <head>
     <link rel="stylesheet" href="/css/home.css" />
 </head>
+
 <body>
-    <h1 class="ok">ok</h1>
+    <div>
+        <h1 class="ok">ok</h1>
+        <h1>{{soa}}</h1>
+    </div>
+    <div>
+        <button type="submit"><a href="/login">Login</a></button>
+    </div>
+    <div>
+        <form action="/handle" method="POST">
+            <input type="number" name="id" />
+            <input type="text" name="ten" />
+            <input type="submit" value="setting" />
+        </form>
+
+       {{datauser}}
+    </div>
 </body>

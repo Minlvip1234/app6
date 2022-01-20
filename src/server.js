@@ -1,11 +1,12 @@
 import express from "express";
 
+
 //import file
 import initWebRoute from './route/web'
 import configViewEngine from "./config/Viewengine";
 
 const app = express();
-const port = process.env.PORT || 8000;
+
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
@@ -14,6 +15,8 @@ app.use(express.json());
 configViewEngine(app);
 initWebRoute(app);
 
+
+const port = process.env.PORT || 3000;
 var server = app.listen(port, () => {
     var host = server.address().address
     console.log(`Start at port ${port}`)
