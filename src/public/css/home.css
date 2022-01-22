@@ -1,7 +1,20 @@
-.ok{
-    color: red;
+.Mainpage{
+    padding: 40px 40px 0px 40px;
+    background: linear-gradient(#5c5c94, #00d4ff, #7676b4);
+    display: flex;
+    
 }
 
-.ok1{
-    color: royalblue;
+.table{
+    padding-left: 20%;
 }
+
+.btn-Create{
+    padding: 40px 30px ;
+    border-radius: 20%;
+}
+
+.btn-Edit{
+    margin-top: 2%;
+}
+

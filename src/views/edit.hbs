@@ -1,0 +1,36 @@
+<header>
+    <link rel="stylesheet" href="/css/home.css" />
+</header>
+
+<body>
+    <div>
+        <form action="/doEdit" method="POST">
+        {{#res}}
+        <div>
+            <label>
+                <p>ID</p>
+            </label>
+        </div>
+        <div>
+            <input type="number" value={{ID}} name="id" />
+        </div>
+        <div>
+            <label>
+                <p>Ten</p>
+            </label>
+        </div>
+        <div>
+            <input type="text" value={{Ten}} name="ten" />
+        </div>
+        
+        <div class="btn-Edit">
+            <input type="submit" value="Edit" />
+        </div>
+        </form>
+
+
+        {{/res}}
+
+    </div>
+
+</body>
